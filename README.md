@@ -1,5 +1,5 @@
 # Proyecto final JavaScript - Coderhouse
-Sitio web responsive creado con JavaScript, HTML y CSS para el proyecto final de JavaScript de Coderhouse.
+SPA responsive creada con JavaScript, HTML y CSS para el proyecto final de JavaScript de Coderhouse.
 
 #### Skill utilizados:
 * jQuery
