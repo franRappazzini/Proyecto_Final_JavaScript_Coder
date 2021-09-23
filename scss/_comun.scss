@@ -1,0 +1,14 @@
+// para todas las a
+a {
+  text-decoration: none;
+}
+
+// para todos los svg
+svg:hover {
+  transform: scale(1.05);
+}
+
+// para todos los btn
+.btn:active {
+  transform: scale(0.9);
+}

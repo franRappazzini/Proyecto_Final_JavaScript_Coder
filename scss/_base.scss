@@ -1,0 +1,131 @@
+body {
+  background-color: #f8fafc;
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 0px 3px grey;
+    background-color: white;
+
+    .header__navbar {
+      max-width: 1440px;
+      margin: auto;
+
+      .link__navbar {
+        margin: 0rem 0.5rem 0rem 0.5rem;
+        &:hover::before {
+          content: "💻";
+        }
+      }
+
+      .header__carrito {
+        margin-left: 1rem;
+
+        img {
+          padding: 0;
+        }
+
+        #productosEnCarrito {
+          width: max-content;
+
+          li {
+            border-bottom: 1px solid #e7e7e7;
+          }
+        }
+      }
+
+      @media only screen and (max-width: 776px) {
+        .section__darkMode-carrito {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .main__container {
+    margin-top: 1rem;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+
+    .main__filters {
+      .filters__text-precio {
+        margin-top: 3rem;
+      }
+    }
+
+    .main__articles {
+      article {
+        margin-bottom: 1rem;
+
+        .card__notebook {
+          &:hover {
+            transform: translateY(-0.5%);
+          }
+
+          .img__notebook {
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    .main__otros-filters {
+      .filters__otros-text-precio {
+        margin-top: 3rem;
+      }
+    }
+
+    .main__otros-articles {
+      article {
+        margin-bottom: 1rem;
+
+        .card__otrosProductos {
+          &:hover {
+            transform: translateY(-0.5%);
+          }
+
+          .img__otrosProductos {
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    .main__contacto {
+      background-color: white;
+    }
+
+    @media only screen and (max-width: 767px) {
+      justify-content: center;
+
+      .main__filters {
+        .filters__text-precio {
+          margin-top: 1rem;
+        }
+      }
+
+      .main__otros-filters {
+        .filters__otros-text-precio {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: white;
+    box-shadow: 0px 0px 3px grey;
+    .footer__container {
+      height: 120px;
+      max-width: 1440px;
+      margin: auto;
+
+      @media only screen and (max-width: 500px) {
+        height: auto;
+        flex-direction: column;
+      }
+    }
+  }
+}

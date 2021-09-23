@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <meta
+      name="keywords"
+      content="ropa, bensimon, lovely denim, allo martinez, try me, cibeles, besha, moda, mujer, hombre, indumentaria, calzado, accesorios, formal, casual, sweater, camisas, abrigos, pantalon, camperas, cardigans, poleras, chalecos, buzos, remeras, zapatos, botas, cinturones, gorros, invierno, verano, 2021"
+    />
+    <meta
+      name="description"
+      content="OCKY | Descubri la ultima coleccion de las mejores marcas. Allo Martinez, Bensimon, Besha y mas. Envios a todo el pais."
+    />
+    <meta name="robots" content="index,follow" />
+
+    <!-- imagen de al lado del title -->
+    <link
+      rel="shortcut icon"
+      href="img/iconos/laptop.svg"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="
+          header__navbar
+          navbar navbar-expand-lg navbar-light
+          container-fluid
+        "
+      >
+        <div class="container-fluid">
+          <h1 class="m-0 d-flex align-content-center">
+            <a class="navbar-brand" href="#">Home</a>
+          </h1>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="link__navbar nav-link active m-0"
+                  aria-current="page"
+                  href="#notebooks"
+                  >Notebooks</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="link__navbar nav-link active m-0"
+                  aria-current="page"
+                  href="#otrosProductos"
+                  >Otros productos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="link__navbar nav-link active m-0" href="#contacto"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="link__navbar nav-link active m-0" href="#redes"
+                  >Nuestras redes</a
+                >
+              </li>
+            </ul>
+
+            <form class="d-flex me-5" id="formBusqueda">
+              <input
+                id="buscadorHeader"
+                type="search"
+                class="form-control"
+                placeholder="Buscar por marca"
+                aria-label="Buscar por marca"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-outline-secondary btn-sm"
+                type="submit"
+                id="button-addon2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+            </form>
+
+            <section
+              class="section__darkMode-carrito d-flex justify-content-between"
+            >
+              <div class="btnDarkLightMode d-flex align-items-center">
+                <svg
+                  id="iconLightMode"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="black"
+                  class="bi bi-brightness-high me-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                  />
+                </svg>
+                <div
+                  class="
+                    form-check form-switch
+                    p-0
+                    m-0
+                    d-flex
+                    align-items-center
+                  "
+                >
+                  <input
+                    class="darkLightMode form-check-input m-0"
+                    type="checkbox"
+                    id="flexSwitchCheckDefault"
+                  />
+                </div>
+                <svg
+                  id="iconDarkMode"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="black"
+                  class="bi bi-moon ms-1 me-1"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"
+                  />
+                </svg>
+              </div>
+
+              <div class="header__carrito dropdown dropstart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="23"
+                  fill="black"
+                  class="carritoBtn dropdown-toggle bi bi-cart3"
+                  viewBox="0 0 16 16"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                  />
+                </svg>
+
+                <span
+                  class="
+                    position-absolute
+                    top-0
+                    start-100
+                    translate-middle
+                    badge
+                    rounded-pill
+                    bg-danger
+                  "
+                  id="numberProductosInCarrito"
+                >
+                  0
+                  <span class="visually-hidden">Productos in carrito</span>
+                </span>
+
+                <ul
+                  id="productosEnCarrito"
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton1"
+                ></ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="main__container row">
+          <!-- section notebooks -->
+          <section class="col-12 d-flex justify-content-center mb-5 mt-3">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-link"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModalEleccion"
+            >
+              ¿Que notebook elegir?
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModalEleccion"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabelEleccion"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      ¿Que notebook elegir?
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Si estás buscando la Notebook ideal para vos, lo primero
+                      que tenés que tener en cuenta son los componentes y
+                      atributos mínimos que vas a necesitar dependiendo del uso
+                      que le des al equipo. Si querés una computadora casera que
+                      no necesite mayor procesador, podés elegir una con un
+                      procesador i3, pero si necesitás trabajar con varios
+                      documentos o programas abiertos o tener una mejor
+                      experiencia de gaming, una con i5 o i7 va a ser
+                      imprescindible. A continuación, un listado de
+                      características a tener en cuenta a la hora de comprar tu
+                      próxima Notebook:
+                    </p>
+                    <p>
+                      -Pantalla: los modelos que varían entre las 12 y las 15
+                      pulgadas son conocidos por su portabilidad y bajo peso,
+                      ideales para tareas que no requieran gran resolución o
+                      pantallas gigantes. A partir de las 16 pulgadas en
+                      adelante, vas a poder usar mejores resoluciones, jugar con
+                      un mejor mapa o trabajar en documentos más grandes.
+                    </p>
+                    <p>
+                      -Procesador: este componente es muy importante a la hora
+                      de elegir tu próxima Notebook, las marcas más importantes
+                      en el mercado actual son Intel en sus versiones de
+                      procesadores Celeron, Core i3, Core i5 y Core i7 y AMD que
+                      cuenta con versión Athlon, Atom y A Series. Otro punto muy
+                      importante al elegir un procesador es la velocidad que
+                      posee. Ésta se mide en Ghz y mientras más le exijas al
+                      equipo, más velocidad de procesador vas a necesitar.
+                    </p>
+                    <p>
+                      -RAM: en la RAM es donde se almacena de forma temporal los
+                      programas y datos que tu notebook está utilizando en el
+                      momento. Mientras más le pidas que almacene, mayor RAM vas
+                      a necesitar. Para tareas sencillas una Notebook de 4 a 6
+                      GB va a ser suficiente, si la vas a utilizar para tareas
+                      más exigentes como de diseño básico o tener varios
+                      documentos abiertos a la vez, lo recomendable será de 8 a
+                      16 GB, por último, si vas a necesitar programas de diseño
+                      y edición de video, la RAM debe ser de 16 a 32 GB.
+                    </p>
+                    <p>
+                      -Disco rígido: allí vas a guardar tus archivos y
+                      programas, claro que mientras más quieras guardar, mayor
+                      va a ser la capacidad que vas a necesitar. Existen
+                      distintos discos rígidos: el tradicional HDD, el de estado
+                      sólido SSD y el híbrido SSHD.
+                    </p>
+                    <p>
+                      -Periféricos y batería: asegúrate de que tu nueva notebook
+                      tenga lector de tarjetas, HDMI y una buena cantidad de
+                      puertos USB. Por otro lado, la batería es clave, ya que
+                      mientras mayor autonomía tenga más tiempo la vas a poder
+                      usar sin la necesidad de conectarla a la corriente.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="main__filters col-md-2">
+            <p class="mb-0">Marcas:</p>
+            <div
+              class="btn-group-vertical btn-group-sm"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check radioTodas"
+                name="btnradio"
+                id="btnradio1"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn btn-outline-primary" for="btnradio1"
+                >Todas</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check radioAcer"
+                name="btnradio"
+                id="btnradio2"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="btnradio2"
+                >Acer</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check radioApple"
+                name="btnradio"
+                id="btnradio3"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="btnradio3"
+                >Apple</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check radioHP"
+                name="btnradio"
+                id="btnradio4"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="btnradio4">HP</label>
+
+              <input
+                type="radio"
+                class="btn-check radioLenovo"
+                name="btnradio"
+                id="btnradio5"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="btnradio5"
+                >Lenovo</label
+              >
+            </div>
+
+            <p class="filters__text-precio mb-0">Precio:</p>
+            <div class="input-group mb-2">
+              <select class="form-select" id="inputGroupSelect01">
+                <option class="optionSelected" selected>Seleccionar...</option>
+                <option class="optionMayor" value="1">Mayor a menor</option>
+                <option class="optionMenor" value="2">Menor a mayor</option>
+              </select>
+            </div>
+          </section>
+
+          <section
+            id="notebooks"
+            class="main__articles col-md-10 col-12 row mb-5"
+          ></section>
+
+          <!-- section otrosProductos -->
+          <div class="col-12 mt-5 mb-4">
+            <h5 class="text-center">Otros productos:</h5>
+          </div>
+
+          <section id="otrosProductos" class="main__otros-filters col-md-2">
+            <p class="mb-0">Producto:</p>
+            <div
+              class="btn-group-vertical btn-group-sm"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <input
+                type="radio"
+                class="btn-check radioTodos"
+                name="btnradio1000"
+                id="btnradio1001"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn btn-outline-primary" for="btnradio1001"
+                >Todos</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check radioMouse"
+                name="btnradio1000"
+                id="btnradio1002"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="btnradio1002"
+                >Mouse</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check radioTeclado"
+                name="btnradio1000"
+                id="btnradio1003"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="btnradio1003"
+                >Teclado</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check radioAuriculares"
+                name="btnradio1000"
+                id="btnradio1004"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="btnradio1004"
+                >Auriculares</label
+              >
+            </div>
+
+            <p class="filters__otros-text-precio mb-0">Precio:</p>
+            <div class="input-group mb-2">
+              <select class="form-select" id="inputGroupSelect1000">
+                <option class="optionSelected1000" selected>
+                  Seleccionar...
+                </option>
+                <option class="optionMayor1000" value="1">Mayor a menor</option>
+                <option class="optionMenor1000" value="2">Menor a mayor</option>
+              </select>
+            </div>
+          </section>
+
+          <section
+            class="main__otros-articles col-md-10 col-12 row mb-5"
+          ></section>
+
+          <!-- section contacto -->
+          <section id="contacto" class="main__contacto col-12 row my-5">
+            <iframe
+              class="col-md-6 col-12 my-3"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.0838476244744!2d-58.3647294267328!3d-34.63590049649437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334b6925e5473%3A0x1ca5b2748858b40d!2sEstadio%20Alberto%20J.%20Armando!5e0!3m2!1ses!2sar!4v1631647303286!5m2!1ses!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+
+            <form id="formContacto" class="col-md-6 col-12 row g-3">
+              <h3 class="mb-5 text-center">Contactanos</h3>
+              <div class="col-md-6">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="name" class="form-control" id="name" required />
+              </div>
+              <div class="col-md-6">
+                <label for="lastName" class="form-label">Apellido</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="mail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="mail" required />
+              </div>
+              <div class="col-md-6">
+                <label for="telefono" class="form-label">Telefono</label>
+                <input type="tel" class="form-control" id="telefono" required />
+              </div>
+              <div class="col-12">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="mensaje"
+                  required
+                  placeholder="Si aun no sabe que notebook elegir, si necesita reparar su notebook, o simplemente tiene alguna duda, no dude en escribirnos. Le responderemos en no mas de 24hs."
+                ></textarea>
+              </div>
+              <div class="col-12 d-flex justify-content-between mb-3">
+                <button type="submit" class="btn btn-success">Enviar</button
+                ><button type="reset" class="btn btn-outline-danger">
+                  Restablecer
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+
+      <!-- Modal para el formulario final de la compra -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                Finalizar compra
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <form action="" id="formFinalizarCompra">
+                <div class="form-floating mb-3">
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="nombre"
+                    placeholder="Nombre"
+                    required
+                  />
+                  <label for="nombre" class="labelFormCompra">Nombre</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="apellido"
+                    placeholder="Apellido"
+                  />
+                  <label for="apellido" class="labelFormCompra">Apellido</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="dni"
+                    placeholder="DNI"
+                  />
+                  <label for="dni" class="labelFormCompra">DNI </label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                    required
+                  />
+                  <label for="email" class="labelFormCompra">Email </label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="direccion"
+                    placeholder="Direccion"
+                    required
+                  />
+                  <label for="direccion" class="labelFormCompra"
+                    >Direccion
+                  </label>
+                </div>
+
+                <button
+                  id="btnEnviarForm"
+                  class="btn btn-success"
+                  type="submit"
+                >
+                  Comprar
+                </button>
+                <button
+                  class="btn btn-danger"
+                  type="button"
+                  id="btnCancelarCompra"
+                >
+                  Cancelar compra
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div
+        class="
+          footer__container
+          container-fluid
+          d-flex
+          justify-content-between
+          align-items-center
+        "
+      >
+        <section class="mb-4">
+          <h1 class="text-center m-0">Home</h1>
+          <p class="m-0">Lo mejor en computacion.</p>
+        </section>
+
+        <section id="redes" class="mb-4">
+          <p class="mb-1">Buscanos en redes</p>
+          <div class="d-flex justify-content-center">
+            <a
+              href="https://www.instagram.com/"
+              title="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="25"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.2128 15.86C21.2128 12.8863 18.8338 10.5073 15.86 10.5073C12.8863 10.5073 10.5073 12.8863 10.5073 15.86C10.5073 18.8338 12.8863 21.2128 15.86 21.2128C18.8338 21.2128 21.2128 18.8338 21.2128 15.86ZM23.9883 15.86C23.9883 20.4198 20.4198 23.9883 15.86 23.9883C11.3003 23.9883 7.73175 20.4198 7.73175 15.86C7.73175 11.3003 11.3003 7.73175 15.86 7.73175C20.4198 7.73175 23.9883 11.3003 23.9883 15.86ZM26.169 7.33525C26.169 8.52475 25.376 9.31775 24.1865 9.31775C22.997 9.31775 22.204 8.52475 22.204 7.33525C22.204 6.14575 22.997 5.35275 24.1865 5.35275C25.376 5.35275 26.169 6.344 26.169 7.33525ZM15.86 2.7755C13.481 2.7755 8.52475 2.57725 6.54225 3.37025C5.1545 3.965 3.965 5.1545 3.5685 6.54225C2.7755 8.52475 2.97375 13.481 2.97375 15.86C2.97375 18.239 2.7755 23.1953 3.5685 25.1778C3.965 26.5655 5.1545 27.755 6.54225 28.1515C8.52475 28.9445 13.6793 28.7463 15.86 28.7463C18.0408 28.7463 23.1953 28.9445 25.1778 28.1515C26.5655 27.5568 27.5568 26.5655 28.1515 25.1778C28.9445 22.997 28.7463 18.0408 28.7463 15.86C28.7463 13.6793 28.9445 8.52475 28.1515 6.54225C27.755 5.1545 26.5655 3.965 25.1778 3.5685C23.1953 2.57725 18.239 2.7755 15.86 2.7755ZM31.72 15.86V22.4023C31.72 24.7813 30.927 27.1603 29.1428 29.1428C27.3585 30.927 24.9795 31.72 22.4023 31.72H9.31775C6.93875 31.72 4.55975 30.927 2.57725 29.1428C0.99125 27.3585 0 24.9795 0 22.4023V15.86V9.31775C0 6.7405 0.99125 4.3615 2.57725 2.57725C4.55975 0.99125 6.93875 0 9.31775 0H22.4023C24.7813 0 27.1603 0.793 29.1428 2.57725C30.7288 4.3615 31.72 6.7405 31.72 9.31775V15.86Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="https://www.facebook.com/"
+              title="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mx-2"
+              ><svg
+                width="25"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.8844 0C7.14027 0 0.0244141 7.11585 0.0244141 15.86C0.0244141 24.6041 7.14027 31.72 15.8844 31.72C24.6286 31.72 31.7444 24.6041 31.7444 15.86C31.7444 7.11585 24.6286 0 15.8844 0ZM15.8844 2.64333C23.1998 2.64333 29.1011 8.54458 29.1011 15.86C29.1043 19.024 27.9697 22.0837 25.9044 24.4807C23.8391 26.8777 20.9808 28.4522 17.8511 28.9167V19.714H21.6152L22.2059 15.8904H17.8511V13.8022C17.8511 12.2162 18.3731 10.8059 19.8573 10.8059H22.243V7.47006C21.824 7.41323 20.9371 7.29031 19.2613 7.29031C15.7615 7.29031 13.7103 9.138 13.7103 13.3488V15.8904H10.1127V19.714H13.7103V28.8837C10.6239 28.3757 7.8186 26.7869 5.79572 24.4011C3.77285 22.0153 2.66416 18.9879 2.66775 15.86C2.66775 8.54458 8.56899 2.64333 15.8844 2.64333Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="https://www.youtube.com/"
+              title="YouTube"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="30"
+                height="25"
+                viewBox="0 0 39 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M38.7315 13.1333C38.7315 13.0443 38.7315 12.9431 38.7273 12.8257C38.7231 12.4978 38.7146 12.1294 38.7062 11.7367C38.6723 10.6073 38.6131 9.48197 38.52 8.42137C38.3931 6.96002 38.2069 5.74155 37.953 4.82668C37.6852 3.87194 37.16 3.0012 36.4302 2.30148C35.7004 1.60176 34.7913 1.09758 33.794 0.839328C32.5967 0.531674 30.2527 0.341415 26.9526 0.224021C25.3829 0.167348 23.7032 0.130915 22.0235 0.110674C21.4354 0.102578 20.8896 0.0985305 20.3989 0.0944824H19.155C18.6642 0.0985305 18.1184 0.102578 17.5303 0.110674C15.8506 0.130915 14.1709 0.167348 12.6012 0.224021C9.30108 0.345463 6.95291 0.535722 5.75978 0.839328C4.76213 1.09695 3.85276 1.60091 3.12282 2.30073C2.39287 3.00055 1.86799 3.87163 1.60076 4.82668C1.34267 5.74155 1.16074 6.96002 1.03381 8.42137C0.940732 9.48197 0.881499 10.6073 0.847651 11.7367C0.834958 12.1294 0.830727 12.4978 0.826497 12.8257C0.826497 12.9431 0.822266 13.0443 0.822266 13.1333V13.36C0.822266 13.4491 0.822266 13.5503 0.826497 13.6677C0.830727 13.9956 0.839189 14.3639 0.847651 14.7566C0.881499 15.886 0.940732 17.0114 1.03381 18.072C1.16074 19.5333 1.3469 20.7518 1.60076 21.6667C2.14232 23.6057 3.73316 25.1359 5.75978 25.654C6.95291 25.9617 9.30108 26.1519 12.6012 26.2693C14.1709 26.326 15.8506 26.3624 17.5303 26.3827C18.1184 26.3908 18.6642 26.3948 19.155 26.3989H20.3989C20.8896 26.3948 21.4354 26.3908 22.0235 26.3827C23.7032 26.3624 25.3829 26.326 26.9526 26.2693C30.2527 26.1479 32.6009 25.9576 33.794 25.654C35.8206 25.1359 37.4115 23.6098 37.953 21.6667C38.2111 20.7518 38.3931 19.5333 38.52 18.072C38.6131 17.0114 38.6723 15.886 38.7062 14.7566C38.7188 14.3639 38.7231 13.9956 38.7273 13.6677C38.7273 13.5503 38.7315 13.4491 38.7315 13.36V13.1333ZM35.6853 13.3438C35.6853 13.4288 35.6853 13.5219 35.681 13.6312C35.6768 13.947 35.6683 14.2951 35.6599 14.6716C35.6303 15.7484 35.571 16.8252 35.4822 17.825C35.3679 19.1285 35.2072 20.1972 35.0083 20.9137C34.746 21.8488 33.976 22.5896 33.0028 22.8366C32.1143 23.0633 29.8762 23.2454 26.8341 23.3547C25.2941 23.4114 23.6355 23.4478 21.9812 23.4681C21.4016 23.4762 20.8643 23.4802 20.3819 23.4802H19.1719L17.5726 23.4681C15.9183 23.4478 14.264 23.4114 12.7197 23.3547C9.67764 23.2414 7.43523 23.0633 6.55097 22.8366C5.57785 22.5856 4.80782 21.8488 4.5455 20.9137C4.34664 20.1972 4.18587 19.1285 4.07163 17.825C3.98278 16.8252 3.92778 15.7484 3.89393 14.6716C3.88124 14.2951 3.87701 13.9429 3.87278 13.6312C3.87278 13.5219 3.86855 13.4248 3.86855 13.3438V13.1495C3.86855 13.0645 3.86855 12.9714 3.87278 12.8621C3.87701 12.5464 3.88547 12.1982 3.89393 11.8218C3.92355 10.745 3.98278 9.66818 4.07163 8.6683C4.18587 7.36482 4.34664 6.29613 4.5455 5.57962C4.80782 4.64452 5.57785 3.90372 6.55097 3.65679C7.43946 3.4301 9.67764 3.24793 12.7197 3.13863C14.2597 3.08196 15.9183 3.04553 17.5726 3.02529C18.1522 3.01719 18.6895 3.01314 19.1719 3.01314H20.3819L21.9812 3.02529C23.6355 3.04553 25.2898 3.08196 26.8341 3.13863C29.8762 3.25198 32.1186 3.4301 33.0028 3.65679C33.976 3.90777 34.746 4.64452 35.0083 5.57962C35.2072 6.29613 35.3679 7.36482 35.4822 8.6683C35.571 9.66818 35.626 10.745 35.6599 11.8218C35.6726 12.1982 35.6768 12.5504 35.681 12.8621C35.681 12.9714 35.6853 13.0686 35.6853 13.1495V13.3438ZM16.0114 18.6711L25.8272 13.2062L16.0114 7.82226V18.6711Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <section class="mb-4">
+          <a
+            href="https://wa.me/+54912345678"
+            class="d-flex mb-2 align-items-center"
+            title="WhatsApp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="25"
+              height="25"
+              class="me-1"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20.5032 3.50456C18.2471 1.24581 15.2467 0.0013247 12.0502 0C5.4635 0 0.102885 5.36047 0.100235 11.9489C0.0993524 14.055 0.649544 16.111 1.69532 17.9232L0 24.1154L6.33485 22.4536C8.08037 23.4058 10.0455 23.9076 12.0453 23.9082H12.0503C18.6363 23.9082 23.9975 18.5472 24 11.9585C24.0013 8.76538 22.7595 5.76317 20.5032 3.50456ZM12.0502 21.89H12.0461C10.2639 21.8893 8.51604 21.4104 6.99087 20.5056L6.62835 20.2903L2.86915 21.2764L3.87253 17.6113L3.6363 17.2355C2.64204 15.6541 2.11701 13.8263 2.1179 11.9497C2.11996 6.47351 6.57565 2.01825 12.0542 2.01825C14.7071 2.01913 17.2009 3.05358 19.0761 4.93097C20.9513 6.80836 21.9834 9.3038 21.9825 11.9578C21.9801 17.4344 17.5247 21.89 12.0502 21.89ZM17.4982 14.4513C17.1997 14.3017 15.7317 13.5796 15.4579 13.4798C15.1844 13.3802 14.9851 13.3306 14.7863 13.6294C14.5871 13.9282 14.015 14.6008 13.8407 14.8C13.6665 14.9993 13.4925 15.0243 13.1938 14.8747C12.8952 14.7253 11.9332 14.4099 10.7926 13.3927C9.90506 12.601 9.30586 11.6232 9.13159 11.3244C8.95761 11.0253 9.13011 10.8793 9.26258 10.715C9.58581 10.3137 9.90948 9.89285 10.009 9.6937C10.1086 9.49441 10.0587 9.31999 9.98396 9.17059C9.90948 9.0212 9.31233 7.55152 9.06359 6.95349C8.82102 6.3715 8.57507 6.4501 8.39167 6.44098C8.21769 6.43229 8.01855 6.43053 7.8194 6.43053C7.6204 6.43053 7.29688 6.50515 7.02311 6.80424C6.74948 7.10318 5.97822 7.82543 5.97822 9.29511C5.97822 10.7648 7.04813 12.1846 7.19738 12.3839C7.34663 12.5832 9.30291 15.5991 12.2981 16.8923C13.0105 17.2002 13.5665 17.3837 14.0003 17.5213C14.7156 17.7486 15.3664 17.7165 15.8809 17.6397C16.4547 17.5539 17.6473 16.9173 17.8964 16.2199C18.1451 15.5224 18.1451 14.9246 18.0704 14.8C17.9959 14.6754 17.7967 14.6008 17.4982 14.4513Z"
+                fill="black"
+              />
+            </svg>
+            <p class="m-0">+54912345678</p>
+          </a>
+
+          <a
+            href="mailto:info@outlook.com"
+            class="d-flex align-items-center"
+            title="Email"
+          >
+            <svg
+              width="25"
+              height="18"
+              class="me-1"
+              viewBox="0 0 24 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 0.830435L0.857143 0H23.1429L24 0.830435V15.7783L23.1429 16.6087H0.857143L0 15.7783V0.830435ZM1.71429 2.54943V14.9478H22.2857V2.5511L12.5314 9.79913H11.4857L1.71429 2.54943ZM20.6229 1.66087H3.37714L12 8.08677L20.6229 1.66087Z"
+                fill="black"
+              />
+            </svg>
+            <p class="m-0">info@outlook.com</p>
+          </a>
+        </section>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/otrosProductos.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
