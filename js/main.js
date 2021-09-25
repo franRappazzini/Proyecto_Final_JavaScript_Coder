@@ -17,6 +17,9 @@ $(() => {
   // del carrito
   renderizarCarrito();
   finalizarCompra();
+
+  mostrarCarritoInicial();
+  agregarNumeroAlCarrito();
 });
 
 /**
@@ -333,6 +336,8 @@ function renderizarLista(listaNotebooks, marca) {
       console.log(carrito);
 
       agregarNumeroAlCarrito();
+
+      guardarProductosLocalStorage();
     });
 
     leerCheckboxDarkLightMode();
@@ -595,4 +600,14 @@ function crearNumeroAleatorio() {
   let number = Math.round(Math.random() * 10000);
 
   return number;
+}
+
+// ---------para que cuando reinicie la pagina sigan estando los productos en el carrito---------
+function guardarProductosLocalStorage() {
+  localStorage.setItem("Carrito", JSON.stringify(carrito));
+}
+
+// ---------para que al iniciar la pagina se carguen los productos que habian quedado en el carrito---------
+function mostrarCarritoInicial() {
+  carrito = JSON.parse(localStorage.getItem("Carrito"));
 }

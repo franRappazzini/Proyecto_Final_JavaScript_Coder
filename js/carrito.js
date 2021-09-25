@@ -53,6 +53,8 @@ function renderizarCarrito() {
           console.log(carrito);
 
           agregarNumeroAlCarrito();
+
+          guardarProductosLocalStorage();
         });
       }
 
@@ -107,6 +109,8 @@ function vaciarCarrito() {
       // actualiza el numero que aparece arriba del carrito
       agregarNumeroAlCarrito();
       console.log(carrito);
+
+      guardarProductosLocalStorage();
     }
   });
 }
