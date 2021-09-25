@@ -565,6 +565,7 @@
                     class="form-control"
                     id="dni"
                     placeholder="DNI"
+                    required
                   />
                   <label for="dni" class="labelFormCompra">DNI </label>
                 </div>
@@ -591,6 +592,51 @@
                   </label>
                 </div>
 
+                <div class="datos__tarjeta row">
+                  <div class="form-floating mb-3 col-12">
+                    <input
+                      type="text"
+                      minlength="16"
+                      maxlength="16"
+                      class="form-control"
+                      id="numeroDeTarjeta"
+                      placeholder="numeroDeTarjeta"
+                      onkeypress="return validarNumerosTarjeta(event)"
+                      required
+                    />
+                    <label for="numeroDeTarjeta" class="labelFormCompra"
+                      >Numero de tarjeta
+                    </label>
+                  </div>
+
+                  <div class="form-floating mb-3 col-6">
+                    <input
+                      type="text"
+                      maxlength="3"
+                      minlength="3"
+                      class="form-control"
+                      id="cvv"
+                      placeholder="cvv"
+                      onkeypress="return validarNumerosTarjeta(event)"
+                      required
+                    />
+                    <label for="cvv" class="labelFormCompra">CVV </label>
+                  </div>
+
+                  <div class="form-floating mb-3 col-6">
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="caducidadTarjeta"
+                      placeholder="caducidadTarjeta"
+                      required
+                    />
+                    <label for="caducidadTarjeta" class="labelFormCompra"
+                      >Fecha de caducidad
+                    </label>
+                  </div>
+                </div>
+
                 <button
                   id="btnEnviarForm"
                   class="btn btn-success"
@@ -599,7 +645,7 @@
                   Comprar
                 </button>
                 <button
-                  class="btn btn-danger"
+                  class="btn btn-outline-danger"
                   type="button"
                   id="btnCancelarCompra"
                 >

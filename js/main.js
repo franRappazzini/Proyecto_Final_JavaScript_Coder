@@ -76,26 +76,45 @@ class OtrosProductos {
 }
 // ---------comprador---------
 class Persona {
-  constructor(nombre, apellido, dni, email, direccion, compra) {
+  constructor(
+    nombre,
+    apellido,
+    dni,
+    email,
+    direccion,
+    compra,
+    tarjeta,
+    cvv,
+    vencimiento
+  ) {
     this.nombre = nombre;
     this.apellido = apellido;
     this.dni = dni;
     this.email = email;
     this.direccion = direccion;
     this.compra = compra;
+    this.tarjeta = tarjeta;
+    this.cvv = cvv;
+    this.vencimiento = vencimiento;
   }
 
   agradecimiento() {
-    alert(
-      `Gracias ${this.nombre} ${this.apellido}. En unos dias recibira su producto en ${this.direccion}.\nSe le envio un mail a ${this.email} para seguir el envio.`
-    );
+    $("main").empty().append(`
+      <h4 class="text-center mt-3">Muchas gracias por su compra ${this.nombre}!</h4>
+      <p class="text-center">Le enviamos un email a ${this.email} para que pueda seguir el envio.</p>
+      <div class="d-flex justify-content-center">
+        <a href="index.html" class="btn btn-primary">Volver al Home</a>
+      </div>`);
+
+    $(".modal-backdrop").remove();
+
+    $("footer").remove();
   }
 }
 
 /**
  * FUNCTIONS para Notebooks
  */
-
 // ---------get de una pagina que contiene json, instacio objetos 'Notebook' y los pusheo a 'listaNotebooks'---------
 function crearNotebooks() {
   const URLNOTEBOOKS =
@@ -302,8 +321,15 @@ function renderizarLista(listaNotebooks, marca) {
     </article>`);
 
     // para enviar notebooks al carrito
+    let cantidad = 1;
     $(`#btnCarrito${notebook.id}`).click(() => {
-      carrito.push(new Producto(notebook, crearNumeroAleatorio()));
+      let producto = new Producto(notebook, crearNumeroAleatorio(), cantidad);
+
+      carrito.push(producto);
+
+      // si vuelvo a tocar el boton le suma
+      cantidad++;
+
       console.log(carrito);
 
       agregarNumeroAlCarrito();

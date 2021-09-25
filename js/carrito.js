@@ -1,7 +1,6 @@
 /**
  * FUNCTIONS RELACIONADAS AL CARRITO
  */
-
 // ---------para agregar los productos al acrrito en el html---------
 function renderizarCarrito() {
   $(".header__carrito svg").click(() => {
@@ -37,7 +36,7 @@ function renderizarCarrito() {
 
               <div>
                 <button id="btnRemoveCarrito${producto.id}" class="btnRemoveCarrito btn btn-danger btn-sm" type="button">X</button>
-              </div> 
+              </div>  
 
             </li>`);
 
@@ -125,12 +124,17 @@ function precioTotalCarrito() {
 
 // ---------finalizar compra---------
 function finalizarCompra() {
+  validarCaducidadTarjeta();
+
   $("#formFinalizarCompra").submit(() => {
     let nombre = $("#nombre").val();
     let apellido = $("#apellido").val();
     let dni = $("#dni").val();
     let email = $("#email").val();
     let direccion = $("#direccion").val();
+    let numeroDeTarjeta = $("#numeroDeTarjeta").val();
+    let cvv = $("#cvv").val();
+    let caducidadTarjeta = $("#caducidadTarjeta").val();
 
     let comprador = new Persona(
       nombre,
@@ -138,7 +142,10 @@ function finalizarCompra() {
       dni,
       email,
       direccion,
-      carrito
+      carrito,
+      numeroDeTarjeta,
+      cvv,
+      caducidadTarjeta
     );
     console.log(comprador);
 
@@ -156,4 +163,37 @@ function finalizarCompra() {
       window.location.reload();
     }
   });
+}
+
+// ---------para validar el numero y cvv de la tarjeta---------
+function validarNumerosTarjeta(e) {
+  // para el numero y cvv de la tarjeta
+  if (window.event) {
+    keyNum = e.keyCode;
+  } else {
+    keyNum = e.which;
+  }
+
+  if ((keyNum > 47 && keyNum < 58) || keyNum == 8 || keyNum == 13) {
+    return true;
+  } else return false;
+}
+
+// ---------para que la tarjeta no este vencida---------
+function validarCaducidadTarjeta() {
+  let fecha = new Date();
+  let anio = fecha.getFullYear();
+  let dia = fecha.getDate();
+  let mes = fecha.getMonth() + 1;
+
+  if (mes < 10) {
+    // para agregarle el 0 (asi lo toma el formato Date)
+    mes = "0" + mes;
+  } else {
+    mes = mes.toString;
+  }
+
+  let hoy = `${anio}-${mes}-${dia}`;
+
+  $("#caducidadTarjeta").attr("min", hoy);
 }
