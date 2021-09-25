@@ -609,5 +609,7 @@ function guardarProductosLocalStorage() {
 
 // ---------para que al iniciar la pagina se carguen los productos que habian quedado en el carrito---------
 function mostrarCarritoInicial() {
-  carrito = JSON.parse(localStorage.getItem("Carrito"));
+  if (JSON.parse(localStorage.getItem("Carrito"))) {
+    carrito = JSON.parse(localStorage.getItem("Carrito"));
+  } else carrito = [];
 }
