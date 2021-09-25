@@ -153,8 +153,11 @@ function finalizarCompra() {
     );
     console.log(comprador);
 
+    carrito = [];
+    guardarProductosLocalStorage();
+    agregarNumeroAlCarrito();
+
     // guardar en el localStorage los productos comprados y los datos del comprador
-    localStorage.setItem("Productos comprados", JSON.stringify(carrito));
     localStorage.setItem("Comprador", JSON.stringify(comprador));
 
     comprador.agradecimiento();
