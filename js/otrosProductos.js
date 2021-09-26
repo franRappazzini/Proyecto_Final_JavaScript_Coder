@@ -216,6 +216,8 @@ function renderizarListaOtrosProductos(listaOtrosProductos, tipoDeProducto) {
       console.log(carrito);
 
       agregarNumeroAlCarrito();
+
+      guardarProductosLocalStorage();
     });
 
     leerCheckboxDarkLightMode();

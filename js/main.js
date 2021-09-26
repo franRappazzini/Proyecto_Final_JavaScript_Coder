@@ -34,10 +34,9 @@ let carrito = [];
  */
 // ---------productos para agregar al carrito---------
 class Producto {
-  constructor(articulo, id, cantidad) {
+  constructor(articulo, id) {
     this.articulo = articulo;
     this.id = id;
-    this.cantidad = cantidad;
   }
 }
 // ---------notebooks---------
@@ -324,14 +323,8 @@ function renderizarLista(listaNotebooks, marca) {
     </article>`);
 
     // para enviar notebooks al carrito
-    let cantidad = 1;
     $(`#btnCarrito${notebook.id}`).click(() => {
-      let producto = new Producto(notebook, crearNumeroAleatorio(), cantidad);
-
-      carrito.push(producto);
-
-      // si vuelvo a tocar el boton le suma
-      cantidad++;
+      carrito.push(new Producto(notebook, crearNumeroAleatorio()));
 
       console.log(carrito);
 
