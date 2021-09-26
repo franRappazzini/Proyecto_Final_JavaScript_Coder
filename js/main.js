@@ -18,7 +18,7 @@ $(() => {
   renderizarCarrito();
   finalizarCompra();
 
-  mostrarCarritoInicial();
+  renderizarCarritoInicial();
   agregarNumeroAlCarrito();
 });
 
@@ -595,13 +595,13 @@ function crearNumeroAleatorio() {
   return number;
 }
 
-// ---------para que cuando reinicie la pagina sigan estando los productos en el carrito---------
+// ---------para que cuando reinicie la pagina sigan estando los productos en el array carrito---------
 function guardarProductosLocalStorage() {
   localStorage.setItem("Carrito", JSON.stringify(carrito));
 }
 
-// ---------para que al iniciar la pagina se carguen los productos que habian quedado en el carrito---------
-function mostrarCarritoInicial() {
+// ---------para que al iniciar la pagina se rendericen los productos que habian quedado en el carrito---------
+function renderizarCarritoInicial() {
   if (JSON.parse(localStorage.getItem("Carrito"))) {
     carrito = JSON.parse(localStorage.getItem("Carrito"));
   } else carrito = [];
